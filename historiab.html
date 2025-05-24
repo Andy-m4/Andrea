@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historia del Béisbol</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1e40af;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .timeline {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    .event {
+      min-width: 250px;
+      background-color: #e0f2fe;
+      border-left: 5px solid #0284c7;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .bio {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .bio img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .download-btn {
+      background-color: #1e40af;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f172a;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>La Historia del Béisbol</h1>
+  <p>Un recorrido por la evolución de uno de los deportes más populares del mundo</p>
+</header>
+
+<main>
+
+  <!-- Línea del tiempo interactiva -->
+  <section>
+    <h2>Línea del Tiempo</h2>
+    <div class="timeline">
+      <div class="event"><strong>1845:</strong> Se escriben las primeras reglas oficiales del béisbol.</div>
+      <div class="event"><strong>1876:</strong> Se funda la Liga Nacional.</div>
+      <div class="event"><strong>1903:</strong> Primera Serie Mundial.</div>
+      <div class="event"><strong>1947:</strong> Jackie Robinson rompe la barrera racial.</div>
+      <div class="event"><strong>2006:</strong> Nace el Clásico Mundial de Béisbol.</div>
+    </div>
+  </section>
+
+  <!-- Imágenes históricas -->
+  <section>
+    <h2>Imágenes Históricas</h2>
+    <img src="Babe Ruth.jpeg" alt="Babe Ruth">
+    <img src="Jackie Robinson.jpeg" alt="Jackie Robinson">
+  </section>
+
+  <!-- Biografías -->
+  <section>
+    <h2>Figuras Clave</h2>
+
+    <div class="bio">
+      <img src="Babe Ruth.jpeg" alt="Babe Ruth">
+      <div>
+        <h3>Babe Ruth</h3>
+        <p>Uno de los mejores bateadores de la historia. Cambió el juego con su estilo explosivo y récords ofensivos.</p>
+      </div>
+    </div>
+
+    <div class="bio">
+      <img src="Jackie Robinson.jpeg" alt="Jackie Robinson">
+      <div>
+        <h3>Jackie Robinson</h3>
+        <p>El primer jugador afroamericano en las Grandes Ligas modernas. Ícono de los derechos civiles.</p>
+      </div>
+    </div>
+
+    <div class="bio">
+      <img src="Roberto Clemente.jpeg" alt="Roberto Clemente">
+      <div>
+        <h3>Roberto Clemente</h3>
+        <p>Estrella puertorriqueña conocida por su gran talento y labor humanitaria. Alcanzó los 3,000 hits.</p>
+      </div>
+    </div>
+    <title>Menú Biografías de Jugadores</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    nav {
+      background-color: #1e293b;
+      padding: 1rem;
+      border-radius: 8px;
+      width: fit-content;
+    }
+
+    .menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu > button {
+      background-color: #1d4ed8;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      color: #1e293b;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      z-index: 1000;
+      min-width: 250px;
+    }
+
+    .submenu .item {
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .submenu .item:last-child {
+      border-bottom: none;
+    }
+
+    .menu:hover .submenu {
+      display: block;
+    }
+
+    .item h4 {
+      margin: 0 0 0.5rem 0;
+      color: #1d4ed8;
+    }
+
+    .item p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="menu">
+    <button>Biografías de Jugadores</button>
+    <div class="submenu">
+      <div class="item">
+        <h4>Babe Ruth</h4>
+        <p>Uno de los bateadores más poderosos de todos los tiempos. Revolucionó el béisbol con su estilo ofensivo.</p>
+      </div>
+      <div class="item">
+        <h4>Jackie Robinson</h4>
+        <p>Primer afroamericano en jugar en Grandes Ligas modernas. Símbolo de igualdad y lucha contra la discriminación.</p>
+      </div>
+      <div class="item">
+        <h4>Roberto Clemente</h4>
+        <p>Estrella puertorriqueña, ganador de 12 Guantes de Oro y defensor de causas humanitarias. Alcanzó los 3,000 hits.</p>
+      </div>
+    </div>
+  </div>
+</nav>
+  </section>
+    
+
+  <!-- PDF descargable -->
+  <section>
+    <h2>Descarga en PDF</h2>
+    <p>Descarga un resumen completo de la historia del béisbol en formato PDF:</p>
+    <a href="historia-beisbol.pdf" download class="download-btn">Descargar PDF</a>
+  </section>
+
+  <!-- Curiosidades -->
+  <section>
+    <h2>Curiosidades del Béisbol</h2>
+    <ul>
+      <li>El juego más largo de béisbol duró 33 entradas (1981, Triple A).</li>
+      <li>El primer juego profesional pagado fue en 1869.</li>
+      <li>Hay una Liga Profesional de Béisbol en más de 20 países.</li>
+      <li>Un lanzador puede superar los 160 km/h en sus tiros.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Historia del Béisbol | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
